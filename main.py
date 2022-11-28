@@ -3,11 +3,6 @@ import interactions
 
 bot = interactions.Client(token="ODUwMDY5NTQzNjMxNDU0MjM5.GeUASg.4_fLlNpFWjrO18wueQ5SHImD6kbU7257Db4xLo")
 
-@bot.event
-async def on_message(message):
-    if message.content.startswith('-debug'):
-        print('message recieved')
-
 @bot.command(
     name="my_first_command",
     description="This is the first command I made!",
