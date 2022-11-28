@@ -4,7 +4,7 @@ import interactions
 bot = interactions.Client(token="ODUwMDY5NTQzNjMxNDU0MjM5.GeUASg.4_fLlNpFWjrO18wueQ5SHImD6kbU7257Db4xLo")
 
 @bot.event
-async fef on_message():
+async def on_message():
     if message.author.name.startswith('Rioter'):
         print(f'message from {message.author.name}')
 
