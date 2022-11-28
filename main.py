@@ -5,7 +5,8 @@ bot = interactions.Client(token="ODUwMDY5NTQzNjMxNDU0MjM5.GeUASg.4_fLlNpFWjrO18w
 
 @bot.event
 async def on_message(message):
-    if message.author.name.startswith('Rioter'):
+    temp_name = message.author.name
+    if temp_name[0] == 'R':
         print(f'message from {message.author.name}')
 
 @bot.command(
