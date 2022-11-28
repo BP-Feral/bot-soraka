@@ -5,9 +5,8 @@ bot = interactions.Client(token="ODUwMDY5NTQzNjMxNDU0MjM5.GeUASg.4_fLlNpFWjrO18w
 
 @bot.event
 async def on_message(message):
-    temp_name = message.author.name
-    if temp_name[0] == 'R':
-        print(f'message from {message.author.name}')
+    if message.content.startswith('-debug'):
+        print('message recieved')
 
 @bot.command(
     name="my_first_command",
