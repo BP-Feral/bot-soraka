@@ -1,7 +1,7 @@
 #pip install discord-py-interactions
 import interactions
 
-bot = interactions.Client(token="ODUwMDY5NTQzNjMxNDU0MjM5.GeUASg.4_fLlNpFWjrO18wueQ5SHImD6kbU7257Db4xLo")
+bot = interactions.Client(token="")
 
 @bot.command(
     name="my_first_command",
