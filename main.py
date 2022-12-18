@@ -4,7 +4,6 @@ import os
 import time
 import platform
 from colorama import Back, Fore, Style
-from keep_alive import keep_alive
 
 bot_token = os.environ['bot_token']
 
